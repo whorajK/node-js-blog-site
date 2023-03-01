@@ -1,0 +1,25 @@
+<html lang="en">
+  <!-- head -->
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <!-- nav -->
+    <%- include("./partials/nav.ejs") %>
+
+    <!-- content -->
+    <div class="create-blog content">
+      <form action="/blogs" method="Post">
+        <label for="title">Blog title:</label>
+        <input type="text" id="title" name="title" required autofocus />
+        <label for="snippet">Blog snippet:</label>
+        <input type="text" id="snippet" name="snippet" required />
+        <label for="body">Blog body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

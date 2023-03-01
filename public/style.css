@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", serif;
+}
+
+html,
+body {
+  background-color: #fefefe;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fd3c3c;
+}
+
+ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+/* nav */
+.navbar {
+  align-items: center;
+  box-shadow: 0 1px 1px 1px gray;
+  color: #272727;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  max-width: 3000px;
+  padding: 1rem 3rem;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar p {
+  font-size: 0.75rem;
+}
+
+/* content */
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60%;
+  margin-bottom: 5rem;
+  padding: 1rem 3rem;
+  position: relative;
+  width: 100%;
+}
+
+/* blog */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.blog {
+  box-shadow: 0 1px 3px #272727;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.snippet {
+  color: #404040;
+  margin-bottom: 2rem;
+}
+/* about */
+.about h2 {
+  border-bottom: 2px solid #fd3c3c;
+  color: #fd3c3c;
+  margin-bottom: 1rem;
+}
+
+/* not found */
+.not-found {
+  text-align: center;
+}
+
+.not-found h1 {
+  color: #fd3c3c;
+  font-size: 3rem;
+}
+
+/* create */
+.create-blog {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  box-shadow: 0 1px 2px #404040;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+button {
+  background: #fd3c3c;
+  border: none;
+  color: #fefefe;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+#title {
+  text-transform: capitalize;
+}
+
+/* footer */
+footer {
+  color: #272727;
+  text-align: center;
+}
+
+/* media queries */
+@media (max-width: 678px) {
+  ul {
+    display: none;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
